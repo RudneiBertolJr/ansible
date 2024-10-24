@@ -1,9 +1,3 @@
 collections:
-  - name: redhat.satellite
-  - name: infoblox.nios_modules
-  - name: ansible.tower
-  - name: vmware.vmware_rest
-  - name: azure.azcollection
-  - name: cloud.common          
   - name: community.general
   - name: ansible.posix
