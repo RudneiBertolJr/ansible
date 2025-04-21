@@ -9,13 +9,7 @@
         port: 443
 
   rules:
-    - name: Webhook rule
-      condition: true
-      action:
-        print_event:
-          pretty: true
-
-    - name: Send a chat message
+    - name: Trigger a job
       condition: true
       action:
         run_job_template:
@@ -27,7 +21,7 @@
               message: "Test Webhook"
 
     - name: Print event data
-      condition: event.payload is defined
+      condition: true
       action:
         print_event:
           pretty: true
