@@ -10,11 +10,11 @@
 
   rules:
     - name: Say hello
-      condition: event.payload.message == "ansiblex"
+      condition: event.payload.message == "ansible"
       action:
         post_event:
           event:
-            message: "Hello, {{ event.payload.user_name }}!  It is {{ lookup('pipe', 'date +%H:%M:%S') }}"
+            message: "Hello, {{ event.payload.message }}!  It is {{ lookup('pipe', 'date +%H:%M:%S') }}"
 
     - name: Send a chat message
       condition: event.message is defined
