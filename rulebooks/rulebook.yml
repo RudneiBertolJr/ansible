@@ -9,23 +9,22 @@
         port: 443
 
   rules:
-    - name: Say hello
-      condition: event.payload.message == "ansible"
+    - name: Webhook rule
+      condition: true
       action:
-        post_event:
-          event:
-            message: "Hello, {{ event.payload.message }}!  It is {{ lookup('pipe', 'date +%H:%M:%S') }}"
+        print_event:
+          pretty: true
 
-#    - name: Send a chat message
-#      condition: event.message is defined
-#      action:
-#        run_job_template:
-#          name: Demo Job Template
-#          organization: Default
-#          post_events: true
-#          job_args:
-#            extra_vars:
-#              message: "{{ event.message }}"
+    - name: Send a chat message
+      condition: true
+      action:
+        run_job_template:
+          name: Demo Job Template
+          organization: Default
+          post_events: true
+          job_args:
+            extra_vars:
+              message: "Test Webhook"
 
     - name: Print event data
       condition: event.payload is defined
