@@ -6,13 +6,11 @@
     - name: Match events posted to port 5000
       ansible.eda.webhook:
         host: 0.0.0.0
-        port: 5000
+        port: 443
 
   rules:
     - name: Say hello
-      condition: >
-        event.payload.channel_name == "town-square"
-        and event.payload.trigger_word == "say-hello"
+      condition: event.payload.message == "ansiblex"
       action:
         post_event:
           event:
