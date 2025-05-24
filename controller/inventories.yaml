@@ -1,0 +1,32 @@
+---
+controller_inventories:
+  - name: "Demo Inventory"
+    description: ""
+    organization: "Default"
+    host_filter: ""
+    prevent_instance_group_fallback: False
+  - name: "test"
+    description: ""
+    organization: "Default"
+    host_filter: ""
+    prevent_instance_group_fallback: False
+  - name: "Sat"
+    description: ""
+    organization: "Default"
+    host_filter: ""
+    prevent_instance_group_fallback: False
+  - name: "vmware toledo"
+    description: ""
+    organization: "Default"
+    host_filter: ""
+    prevent_instance_group_fallback: False
+  - name: "test1"
+    description: ""
+    organization: "Default"
+    host_filter: ""
+    prevent_instance_group_fallback: False
+  - name: "Sat Ricky"
+    description: ""
+    organization: "Default"
+    host_filter: ""
+    prevent_instance_group_fallback: False
