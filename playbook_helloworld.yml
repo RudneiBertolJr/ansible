@@ -11,4 +11,4 @@
 
   - name: Hello World!
     debug: 
-      msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
+      msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }} develop branch"
