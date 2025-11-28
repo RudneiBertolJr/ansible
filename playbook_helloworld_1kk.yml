@@ -6,13 +6,13 @@
       lolo: lele 
   tasks:
  
-  - name: Check SSH
+  - name: Check SSHish
     shell: "echo Hello World"
 
   - name: Hello World - 10!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(1, 10) | list }}"
+    loop: "{{ range(1, 10) }}"
 
 #  - name: Time out
 #    ansible.builtin.pause:
@@ -21,7 +21,7 @@
   - name: Hello World - 50!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(11, 50) | list }}"
+    loop: "{{ range(11, 50) }}"
 
 #  - name: Time out
 #    ansible.builtin.pause:
@@ -30,7 +30,7 @@
   - name: Hello World - 100!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(51, 100) | list }}"
+    loop: "{{ range(51, 100) }}"
 
 #  - name: Time out
 #    ansible.builtin.pause:
@@ -39,7 +39,7 @@
   - name: Hello World - 200!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(101, 200) | list }}"
+    loop: "{{ range(101, 200) }}"
 
 # - name: Time out
 #    ansible.builtin.pause:
@@ -48,4 +48,4 @@
   - name: Hello World - 300!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(201, 1000) | list }}"
+    loop: "{{ range(201, 1000) }}"
