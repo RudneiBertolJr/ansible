@@ -14,38 +14,38 @@
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
     loop: "{{ range(1, 10) | list }}"
 
-  - name: Time out
-    ansible.builtin.pause:
-      minutes: 2
+#  - name: Time out
+#    ansible.builtin.pause:
+#      minutes: 2
 
   - name: Hello World - 50!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(1, 50) | list }}"
+    loop: "{{ range(11, 50) | list }}"
 
-  - name: Time out
-    ansible.builtin.pause:
-      minutes: 2
+#  - name: Time out
+#    ansible.builtin.pause:
+#      minutes: 2
 
   - name: Hello World - 100!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(1, 100) | list }}"
+    loop: "{{ range(51, 100) | list }}"
 
-  - name: Time out
-    ansible.builtin.pause:
-      minutes: 2
+#  - name: Time out
+#    ansible.builtin.pause:
+#      minutes: 2
 
   - name: Hello World - 200!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(1, 200) | list }}"
+    loop: "{{ range(101, 200) | list }}"
 
-  - name: Time out
-    ansible.builtin.pause:
-      minutes: 2
+# - name: Time out
+#    ansible.builtin.pause:
+#      minutes: 2
   
   - name: Hello World - 300!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }}"
-    loop: "{{ range(1, 300) | list }}"
+    loop: "{{ range(201, 1000) | list }}"
