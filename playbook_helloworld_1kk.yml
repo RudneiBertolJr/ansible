@@ -5,8 +5,7 @@
     foo: 
       lolo: lele 
   tasks:
- 
-  - name: Perform an action 1000 times
-    ansible.builtin.debug:
-      msg: "This is iteration number {{ item }}"
-    loop: "{{ range(0, 1000) | list }}"
+    - name: Perform an action 1000 times
+      ansible.builtin.debug:
+        msg: "This is iteration number {{ item }}"
+      loop: "{{ range(0, 1000) | list }}"
