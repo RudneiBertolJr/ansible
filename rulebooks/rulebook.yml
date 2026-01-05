@@ -12,7 +12,6 @@
     - name: Trigger a job
       condition: true
       action:
-        print_event:
         run_job_template:
           name: Demo Job Template
           organization: Default
@@ -20,8 +19,9 @@
           job_args:
             extra_vars:
               message: "Test Webhook"
-  #  - name: Print event data
-  #    condition: true
-  #    action:
-  #      print_event:
-  #        pretty: true
+  
+    - name: Print event data
+      condition: true
+      action:
+        print_event:
+          pretty: true
