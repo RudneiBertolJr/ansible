@@ -19,6 +19,9 @@
           job_args:
             extra_vars:
               message: "Test Webhook"
+        print_event:
+          pretty: true
+
 
   #  - name: Print event data
   #    condition: true
