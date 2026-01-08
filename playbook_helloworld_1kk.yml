@@ -7,15 +7,4 @@
   tasks:
     - name: Perform an action 1000 times
       ansible.builtin.debug:
-        msg: "This is iteration number {{ item }}"
-      loop: "{{ range(1, 1001) | list }}"
-
-    - name: Perform an action 1000 times
-      ansible.builtin.debug:
-        msg: "This is iteration number {{ item }}"
-      loop: "{{ range(1, 1001) | list }}"
-
-    - name: Perform an action 1000 times
-      ansible.builtin.debug:
-        msg: "This is iteration number {{ item }}"
-      loop: "{{ range(1, 1001) | list }}"   
+        msg: "This is iteration number {{ myvar }}"
