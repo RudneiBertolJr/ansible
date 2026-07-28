@@ -9,6 +9,10 @@
   - name: Check SSH
     shell: "echo Hello World"
 
+  - name: wait 10 seconds
+    ansible.builtin.pause:
+      seconds: 30
+
   - name: Hello World!
     debug: 
       msg: "Hello World!!! Server {{ ansible_hostname }} var foo={{ foo.lolo }} develop branch"
